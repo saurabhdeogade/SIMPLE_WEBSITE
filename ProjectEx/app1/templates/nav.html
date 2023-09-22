@@ -1,0 +1,20 @@
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<h1 class='text-white text-center bg-dark'>The Business Hub </h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <div class="collapse navbar-collapse" >
+    <div class="navbar-nav text-white">
+      <a class="navbar-brand" href="#"><img src="{% static 'images/shakehand.jpg' %}" alt="error" hight='50' width='50'></a>
+      <a class="nav-item nav-link" href="{% url "Home" %}">Home </a>
+      <a class="nav-item nav-link" href="{% url "Weather" %}">Weather</a>
+      <a class="nav-item nav-link" href="{% url "Data" %}">All Data</a>
+      <a class="nav-item nav-link" href="{% url "Sign-up" %}">Sign-up</a>
+      
+    </div>
+  </div>
+</nav>
+
+
+

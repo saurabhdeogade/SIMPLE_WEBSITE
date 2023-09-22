@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+</head>
+<body>
+    
+    {% include "nav.html" %} <hr class='bg-dark p-1'>
+
+    <div class="container">
+        <div class="row">
+          
+            <div class="col-11">
+                <a class="navbar-brand" href="#"><img src="{% static 'images/weather.png' %}" alt="error" width='1200'></a> 
+                <img src="{% static 'images/we.png' %}" alt="error" width='1200'>  
+            </div>
+            <div class="col-1"><h3>{{dt}}</h3></div>
+        </div>
+    </div> 
+    <hr class='bg-dark p-1'>
+ 
+    {% include "footer.html" %}
+    <hr class='bg-warning p-2'>
+ 
+
+
+
+</body>
+</html>
